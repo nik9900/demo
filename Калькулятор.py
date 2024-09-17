@@ -13,19 +13,24 @@ def calculator(main):
     if not (1 <= a <= 10) or not (1 <= b <= 10):
         return print("Ошибка. Числа должны быть в диапазоне от 1 до 10")
     if operator == '+':
+        a= int(a)
+        b=int(b)
         return a + b
     elif operator == '-':
+        a = int(a)
+        b = int(b)
         return a - b
     elif operator == '*':
+        a = int(a)
+        b = int(b)
         return a * b
     elif operator == '/':
         if b == 0:
+
             print("Деление на ноль")
             return
-
-        return a / b
+        return int(a / b)
     else:
         print("Ошибка")
-
-s = int(calculator(z));
+s = calculator(z);
 print("Ответ:", s)
