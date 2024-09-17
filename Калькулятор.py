@@ -1,6 +1,5 @@
 
 z = input("Введите выражение (например, 1 + 2): ")
-
 def calculator(main):
     parts = main.split()
     if len(parts) != 3:
@@ -26,7 +25,6 @@ def calculator(main):
         return a * b
     elif operator == '/':
         if b == 0:
-
             print("Деление на ноль")
             return
         return int(a / b)
